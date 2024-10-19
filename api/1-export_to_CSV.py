@@ -41,6 +41,7 @@ def main(employee_id):
     """
     Main function to fetch user info and TODO list, then export to CSV
     """
+    employee_id = int(employee_id)
     user = get_employee_info(employee_id)
     username = user.get("username")
 
