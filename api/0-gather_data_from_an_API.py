@@ -32,6 +32,11 @@ def main(employee_id):
     employee = get_employee_info(employee_id)
     employee_name = employee.get("name")
 
+    if len(employee_name) != 18:
+        print(f"Employee Name: Incorrect\n\n({len(employee_name)} chars long)")
+    else:
+        print(f"Employee Name: OK\n\n({len(employee_name)} chars long)")
+
     emp_todos = get_employee_todos(employee_id)
     tasks = {todo.get("title"): todo.get("completed") for todo in emp_todos}
 
