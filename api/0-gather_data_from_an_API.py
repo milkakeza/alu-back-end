@@ -3,8 +3,7 @@
 Python script that returns TODO list progress for a given employee ID
 """
 
-
-import requests # type: ignore
+import requests  # type: ignore
 from sys import argv
 
 
