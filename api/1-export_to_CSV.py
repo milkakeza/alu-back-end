@@ -36,6 +36,8 @@ def export_to_csv(employee_id, username, todos):
             rowData = [employee_id, username, todo['completed'], todo['title']]
             file_writer.writerow(rowData)
 
+    print(f"Number of tasks in CSV: {len(todos)}")
+
 
 def main(employee_id):
     """
